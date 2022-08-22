@@ -17,6 +17,6 @@ steps:
     image: appleboy/drone-git-push
     settings:
       branch: main
-      remote: origin
+      remote: git@github.com:aricodes-oss/std.giit
       commit: true
       commit_message: 'CHORE: Update dependencies'

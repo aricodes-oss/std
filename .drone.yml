@@ -1,0 +1,22 @@
+kind: pipeline
+type: docker
+name: refresh dependencies
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+  - name: update
+    image: golang:latest
+    commands:
+      - go get -u
+      - go mod tidy
+
+  - name: push
+    image: appleboy/drone-git-push
+    settings:
+      branch: main
+      remote: origin
+      commit: true
+      commit_message: 'CHORE: Update dependencies'

@@ -20,3 +20,5 @@ steps:
       remote: git@github.com:aricodes-oss/std.giit
       commit: true
       commit_message: 'CHORE: Update dependencies'
+      ssh_key:
+        from_secret: PRIVATE_KEY

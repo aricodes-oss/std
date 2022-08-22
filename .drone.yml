@@ -21,4 +21,4 @@ steps:
       commit: true
       commit_message: 'CHORE: Update dependencies'
       ssh_key:
-        from_secret: PRIVATE_KEY
+        from_secret: ARICODES_PRIVATE_KEY

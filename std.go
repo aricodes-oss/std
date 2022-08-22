@@ -1,6 +1,7 @@
 package std
 
 import (
+	_ "github.com/joho/godotenv/autoload"
 	"github.com/withmandala/go-log"
 	"os"
 	"os/signal"

@@ -16,9 +16,9 @@ steps:
   - name: push
     image: appleboy/drone-git-push
     settings:
-      ssh_key:
-        from_secret: ARICODES_PRIVATE_KEY
       branch: main
       remote: git@github.com:aricodes-oss/std.git
       commit: true
       commit_message: 'CHORE: Update dependencies'
+      ssh_key:
+        from_secret: ARICODES_PRIVATE_KEY

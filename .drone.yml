@@ -6,6 +6,12 @@ platform:
   os: linux
   arch: arm64
 
+trigger:
+  event:
+    - cron
+  cron:
+    - refresh
+
 steps:
   - name: update
     image: golang:latest
